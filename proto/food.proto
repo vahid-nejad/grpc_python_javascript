@@ -1,0 +1,16 @@
+syntax="proto3";
+
+service Food{
+    rpc OrderFood (FoodRequest) returns (FoodResponse);
+}
+
+message  FoodRequest{
+    int32 qty = 1;
+    string food =2;
+
+}
+
+
+message FoodResponse{
+  string  message = 1;
+}
